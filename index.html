@@ -70,7 +70,7 @@
     color:var(--cream); margin:0 0 1.2rem; letter-spacing:-0.01em;
   }
   .hero h1 span{ display:block; }
-  .hero p{ font-family:"neue-haas-unica","Inter"; font-size:12px; line-height:1.6; max-width:38ch; color:var(--offwhite); margin:0; }
+  .hero p{ font-family:"neue-haas-unica","Inter"; font-size:12px; line-height:1.6; max-width:52ch; color:var(--offwhite); margin:0; }
   @media (max-width:640px){
     .hero{ aspect-ratio:auto; min-height:560px; }
   }
@@ -108,6 +108,9 @@
   }
   @media (max-width:640px){ .film .status{ white-space:normal; } }
   .film p.desc{ font-family:"neue-haas-unica","Inter"; font-size:14px; line-height:1.65; color:var(--cream); margin:0 0 1rem; }
+  .film .cta-inline{ color:var(--lime); font-weight:600; white-space:nowrap; }
+  .film .cta-inline .arrow-icon{ width:1em; height:1em; display:inline-block; vertical-align:-0.12em; margin-left:.15em; transition:transform .15s ease; }
+  .film .cta-inline:hover .arrow-icon{ transform:translateX(3px); }
   @media (max-width:640px){ .film-row{ grid-template-columns:1fr; gap:1.2rem; } }
 
   .img-placeholder{
@@ -234,7 +237,7 @@
         <h3 class="display"><a href="friendly-town.html">The Friendly Town</a></h3>
         <div class="meta">
           <span class="status display">Post - Production</span>
-          <p class="desc">Two best friends come home for the holidays to find their town has been brainwashed by the Hallmark corporation, and they have to escape before they become the next happy couple.</p>
+          <p class="desc">Two best friends come home for the holidays to find their town has been brainwashed by the Hallmark corporation, and they have to escape before they become the next happy couple. <a href="friendly-town.html" class="cta-inline">Learn more<svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a></p>
         </div>
       </div>
     </div>
@@ -244,7 +247,7 @@
         <h3 class="display"><a href="wu-wei.html">Wu Wei: After the Fall</a></h3>
         <div class="meta">
           <span class="status display">Post-Production</span>
-          <p class="desc">After a severe head injury changes her relationship with movement, Canadian parkour pioneer Mandy Lam sets out to reclaim her body, her practice and her place in an art she has helped shape for decades.</p>
+          <p class="desc">After a severe head injury changes her relationship with movement, Canadian parkour pioneer Mandy Lam sets out to reclaim her body, her practice and her place in an art she has helped shape for decades. <a href="wu-wei.html" class="cta-inline">Learn more<svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a></p>
         </div>
       </div>
     </div>
@@ -295,7 +298,7 @@
       <div class="names">
         <h3>Mandy Lam</h3>
       </div>
-      <p class="bio">Born in Hong Kong, raised in Toronto, where she calls home, Mandy is a multidisciplinary creative whose storytelling practice grew out of a long career in&hellip;Parkour! She has been practicing since 2007 and is one of the longest-practicing woman in Canada. After a head injury interrupted her competitive trajectory, she began developing a short film based on that experience, &lsquo;Wu Wei: After the Fall&rsquo;.</p>
+      <p class="bio">Born in Hong Kong, raised in Toronto, where she calls home, Mandy is a creative whose storytelling practice grew out of a long career in&hellip;Parkour! She has been practicing since 2007 and is one of the longest-practicing women in Canada. After a head injury interrupted her competitive trajectory, she began developing a short film based on that experience, &lsquo;<em>Wu Wei: After the Fall</em>&rsquo;.</p>
       <div class="team-social">
         <a href="https://www.instagram.com/lam.mandy" target="_blank" rel="noopener" aria-label="Mandy Lam on Instagram">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
