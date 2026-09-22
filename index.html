@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
 <title>Load Bearing Pictures</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,13 +72,19 @@
   }
   .hero h1 span{ display:block; }
   .hero p{ font-family:"neue-haas-unica","Inter"; font-size:14px; line-height:1.6; max-width:52ch; color:var(--offwhite); margin:0; }
+  @media (min-width:641px){
+    .hero h1{ font-size:clamp(2.7rem,14.04vw,194px); }
+    .site-nav a{ font-size:clamp(1.1rem,3.6vw,43px); }
+  }
   @media (max-width:640px){
     .hero{ aspect-ratio:auto; min-height:560px; }
+    .hero .bg-photo{ object-position:90% center; }
   }
 
   /* ---------- vision ---------- */
-  .vision{ padding:5rem clamp(1.2rem,4vw,2.6rem); }
-  .vision .content{ max-width:640px; margin:0 auto 0 0; text-align:left; }
+  .vision{ aspect-ratio:16/9; display:flex; align-items:flex-end; }
+  .vision .content{ max-width:640px; text-align:left; padding:3rem clamp(1.2rem,4vw,2.6rem) 3.4rem; }
+  @media (max-width:640px){ .vision{ aspect-ratio:auto; min-height:480px; } }
   .eyebrow{
     font-family:"Big Shoulders", sans-serif; font-weight:700; font-size:.85rem;
     letter-spacing:.14em; margin:0 0 1.2rem;
@@ -93,6 +100,7 @@
   .slate-inner{ max-width:none; margin:0; }
   .film{ padding:2.6rem 0; }
   .film:first-of-type{ padding-top:0; }
+  .film + .film{ border-top:1px solid var(--hairline-d); }
   .film-row{
     display:grid; grid-template-columns:1.7fr 1fr; gap:2.5rem; align-items:stretch;
   }
@@ -236,7 +244,7 @@
       <div class="film-row">
         <h3 class="display"><a href="friendly-town.html">The Friendly Town</a></h3>
         <div class="meta">
-          <span class="status display">Post - Production</span>
+          <span class="status display">Post-Production</span>
           <p class="desc">Two best friends come home for the holidays to find their town has been brainwashed by the Hallmark corporation, and they have to escape before they become the next happy couple. <a href="friendly-town.html" class="cta-inline">Learn more<svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a></p>
         </div>
       </div>
@@ -256,7 +264,7 @@
       <div class="film-row">
         <h3 class="display">The Hopping Vampires of Toronto</h3>
         <div class="meta">
-          <span class="status display">Pre-Development</span>
+          <span class="status display">Development</span>
           <p class="desc">When a Geung-si (an ancient hopping Chinese vampire) kidnaps her father, Wei, a young woman, along with a motley crew of friends, needs to rescue him before he becomes undead &mdash; along with the entire city.</p>
         </div>
       </div>
@@ -367,5 +375,6 @@
     document.getElementById('form-note').hidden = false;
   });
 </script>
-</body>
+
+</body></html></body>
 </html>
